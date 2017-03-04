@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 25, 2017 6:30:54 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class name="com.tutorial.entity.Bike" schema="bikeweb" table="Bike">
+    <id name="bikeId" type="java.lang.Integer">
+      <column name="bike_id"/>
+      <generator class="native"/>
+    </id>
+    <property name="bikeName" type="string">
+      <column name="bike_name"/>
+    </property>
+     <property name="bikeDescription" type="string">
+      <column name="bike_description"/>
+    </property>
+    <property name="bikeImg" column="bike_img" type="binary"/>
+  </class>
+</hibernate-mapping>
